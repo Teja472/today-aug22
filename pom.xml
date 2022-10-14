@@ -4,7 +4,7 @@
   <groupId>com.sample</groupId>
   <artifactId>SampleWebApp123</artifactId>
   <packaging>war</packaging>
-  <version>2.0-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <name>SampleWebApp123 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -16,9 +16,8 @@
     </dependency>
   </dependencies>
   <build>
-
-     <finalName>${project.artifactId}##${project.version}</finalName>
-          <plugins>
+	  <finalName>${project.artifactId}##${project.version}</finalName>
+	  <plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
@@ -31,13 +30,7 @@
 					<update>true</update>
 				</configuration>
 			</plugin>
-</plugins>
-<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-			</resource>
-</resources>
+		</plugins>
 
-<build>
+  </build>
 </project>
